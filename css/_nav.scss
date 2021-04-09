@@ -1,0 +1,47 @@
+header{
+    background-color: rgb(6, 78, 78);
+    border: darkblue solid 2px;
+    position: sticky fixed;
+
+nav ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 15px;
+    display: inline-block;
+    box-align: center;
+
+}
+
+
+.Nav{
+a{
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+
+    }
+}
+
+
+&__logo{
+    order: 1;
+    padding: 5px;
+}
+
+&__item{
+    order: 2;
+    padding: 15px;
+}
+
+&__button{
+    background-color:darkslategray;
+    order: 3;
+    float: right;
+    padding: 7px;
+    border: solid 1px honeydew;
+}
+}
+
+

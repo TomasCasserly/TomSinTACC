@@ -1,0 +1,30 @@
+*{
+    margin: 2px;
+}
+
+@import "variables";
+@import "nav";
+@import "mediaqueries";
+@import "footer";
+@import "recetas";
+@import "team";
+@import "formulario";
+@import "post";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "error";
+
+
+body{
+    background-color: $primary;
+    color:$main-font-color;
+    overflow-x: hidden;
+}
+
+$theme-colors: (
+    "primary": $primary,
+    "danger": $danger
+);
+
+.team:hover{
+    transform: scale(2);
+}

@@ -1,0 +1,33 @@
+.noticias{
+    display: grid;
+    width: 70%;
+    row-gap: 15px;
+}
+
+.noticias__post{
+    display: grid;
+    grid-template-rows: 1, 2;
+    border: $main-font-color solid 3px;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.noticias__link{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.noticias__img{
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 80%;
+    height: auto;
+}
+
+.noticias__post--ultima{
+    font-weight: bolder;
+    background-color: rgb(192, 31, 31);
+    text-transform: uppercase;
+    border-radius: 15px;
+}

@@ -1,0 +1,273 @@
+* {
+  margin: 2px;
+}
+
+/*Media queries*/
+header {
+  background-color: #064e4e;
+  border: darkblue solid 2px;
+  position: -webkit-sticky fixed;
+  position: sticky fixed;
+}
+
+#menu li:hover{
+  transition: transform 1s;
+  transform: scale(1.3);
+}
+
+.recetas__img:hover{
+  transform: rotate(15deg);
+}
+
+.team:hover{
+  transition: all 1s;
+  transform: scale(1.5);
+  vertical-align:auto;
+
+}
+
+header nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  display: inline-block;
+  box-align: center;
+}
+
+header .Nav a {
+  font-size: 20px;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header .Nav__logo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding: 5px;
+}
+
+header .Nav__item {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  padding: 15px;
+}
+
+header .Nav__button {
+  background-color: darkslategray;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  float: right;
+  padding: 7px;
+  border: solid 1px honeydew;
+}
+
+
+@media (max-width: 480) {
+  h3 {
+    font-size: 4px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 728) {
+  h3 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80% 20%;
+      grid-template-columns: 80% 20%;
+  background-color: rgba(2, 236, 236, 0.548);
+}
+
+footer .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 25px;
+}
+
+footer .fa-instagram {
+  background: -webkit-gradient(linear, left top, left bottom, from(purple), to(yellow));
+  background: linear-gradient(purple, yellow);
+  color: white;
+}
+
+footer .fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+footer .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.menuRecetas li a {
+  color: honeydew;
+}
+
+.recetas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 20px;
+  border: 15px solid wheat;
+}
+
+.recetas__item {
+  background: -webkit-gradient(linear, left top, left bottom, from(#712ea1), to(grey));
+  background: linear-gradient(#712ea1, grey);
+  border: 0.5px solid white;
+}
+
+.recetas__img {
+  border: 1px solid #712ea1;
+}
+
+.team {
+  width: 200px;
+  background-color: lightslategray;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid black;
+  margin-right: 10px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.team--2 {
+  background-color: mediumspringgreen;
+}
+
+.team--3 {
+  background-color: lightsteelblue;
+}
+
+.team__photo {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+.team__name {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+.button {
+  width: 100%;
+  color: honeydew;
+  background-color: darkslateblue;
+  padding: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 2rem auto;
+  border: 2px solid honeydew;
+  padding: 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#712ea1), to(grey));
+  background: linear-gradient(#712ea1, grey);
+}
+
+.formulario label {
+  display: block;
+  padding: 10px 0 0 0;
+}
+
+.formulario input {
+  display: block;
+  border: 1px solid black;
+  padding: 5px 0 0 0;
+  border-radius: 5px;
+}
+
+#sendBtn {
+  border: 0;
+  background: #712ea1;
+  color: honeydew;
+  padding: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#sendBtn:hover {
+  background: #714b8b;
+}
+
+.noticias {
+  display: -ms-grid;
+  display: grid;
+  width: 70%;
+  row-gap: 15px;
+}
+
+.noticias__post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1, 2;
+      grid-template-rows: 1, 2;
+  border: honeydew solid 3px;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.noticias__link {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.noticias__img {
+  border-radius: 15px;
+  border: 1px solid black;
+  width: 80%;
+  height: auto;
+}
+
+.noticias__post--ultima {
+  font-weight: bolder;
+  background-color: #c01f1f;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+
+body {
+  background-color: darkcyan;
+  color: honeydew;
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=style.css.map */

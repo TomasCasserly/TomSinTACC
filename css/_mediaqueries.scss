@@ -1,0 +1,18 @@
+
+@media (max-width: 480){
+    h3 {
+    font-size: 4px;
+}
+}
+
+@media (min-width: 480px) and (max-width: 728) {
+    h3{
+      font-size: 14px;
+    }
+  }
+
+@media (min-width: 1024){
+    h3{
+    font-size: 24px;
+}
+}

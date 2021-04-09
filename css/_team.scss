@@ -1,0 +1,42 @@
+.team{
+    width: 200px;
+    background-color:lightslategray;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-right: 10px;
+    border-radius: 8px;
+    display: inline-block;
+
+}
+
+.team--2{
+    background-color:mediumspringgreen;
+}
+
+.team--3{
+    background-color: lightsteelblue;
+}
+
+.team__photo{
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+}
+
+.team__name{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+.button{
+    width: 100%;
+    color: $main-font-color;
+    background-color:darkslateblue;
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,22 @@
+.menuRecetas li a{
+    color: $main-font-color;
+}
+
+.recetas{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    row-gap: 20px;
+    border: 15px solid wheat;
+
+    &__item{
+        background: linear-gradient($color-secondary, grey);
+        border: 0.5px solid white;
+    }
+
+    &__img{
+        border: 1px solid $color-secondary;
+
+    }
+
+}

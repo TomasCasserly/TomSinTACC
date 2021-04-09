@@ -1,0 +1,33 @@
+footer{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: rgba(2, 236, 236, 0.548);
+
+    .fa {
+        padding: 10px;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 25px;
+        
+    }
+
+
+    .fa-instagram {
+        background: linear-gradient(purple, yellow);
+        color: white;
+    }
+
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+          }
+          
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        }
+}
