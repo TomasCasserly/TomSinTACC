@@ -10,12 +10,11 @@
 @import "team";
 @import "formulario";
 @import "post";
-@import "../node_modules/bootstrap/scss/bootstrap";
 @import "error";
 
 
 body{
-    background-color: $primary;
+    background-color: $background-color;
     color:$main-font-color;
     overflow-x: hidden;
 }
@@ -28,3 +27,13 @@ $theme-colors: (
 .team:hover{
     transform: scale(2);
 }
+
+#primeraFila{
+    background-color: orange;
+  }
+  tr{
+    background-color: #f7d986;
+  }
+  table{
+    float: left;
+  }
