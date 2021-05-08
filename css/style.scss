@@ -1,6 +1,4 @@
-*{
-    margin: 2px;
-}
+
 
 @import "variables";
 @import "nav";
@@ -15,14 +13,12 @@
 
 body{
     background-color: $background-color;
-    color:$main-font-color;
+    color: $main-font-color;
     overflow-x: hidden;
+    font-family: 'Cormorant', serif;
+    font-size: 17px;
 }
 
-$theme-colors: (
-    "primary": $primary,
-    "danger": $danger
-);
 
 .team:hover{
     transform: scale(2);
@@ -37,3 +33,46 @@ $theme-colors: (
   table{
     float: left;
   }
+
+  .carouselheight{
+    width: 150vh;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel-caption {
+    background-color: rgba(6, 78, 78, 0.5);
+    color: white;
+}
+
+.testimonios{
+  text-align: center;
+}
+
+.imagenesTestimonios{
+  display: grid;
+  grid-template-columns: 2, 1fr;
+  grid-template-rows: minmax(100px, auto);
+  row-gap: 10px;
+}
+
+.testuno{
+  grid-column: 1 / 1;
+  grid-row: 1;
+}
+
+.testdos{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.testtres{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.testcuatro{
+  grid-column: 2;
+  grid-row: 2;
+}

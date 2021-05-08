@@ -1,7 +1,8 @@
 footer{
     display: grid;
     grid-template-columns: 80% 20%;
-    background-color: rgba(2, 236, 236, 0.548);
+    background-image: linear-gradient(rgb(19, 163, 163), rgb(6, 78, 78));
+    color: honeydew;
 
     .fa {
         padding: 10px;
@@ -30,4 +31,8 @@ footer{
         background: #55ACEE;
         color: white;
         }
+}
+
+footer a{
+    color: rgb(18, 18, 53);
 }

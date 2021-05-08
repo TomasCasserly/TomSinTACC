@@ -1,29 +1,9 @@
-* {
-  margin: 2px;
-}
-
 /*Media queries*/
 header {
-  background-color: #064e4e;
-  border: darkblue solid 2px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#064e4e), to(#13a3a3));
+  background-image: linear-gradient(#064e4e, #13a3a3);
   position: -webkit-sticky fixed;
   position: sticky fixed;
-}
-
-#menu li:hover{
-  transition: transform 1s;
-  transform: scale(1.3);
-}
-
-.recetas__img:hover{
-  transform: rotate(15deg);
-}
-
-.team:hover{
-  transition: all 1s;
-  transform: scale(1.5);
-  vertical-align:auto;
-
 }
 
 header nav ul li {
@@ -38,6 +18,8 @@ header nav ul li {
   padding: 0 15px;
   display: inline-block;
   box-align: center;
+  font-family: 'Cormorant', serif;
+  font-weight: bolder;
 }
 
 header .Nav a {
@@ -47,30 +29,19 @@ header .Nav a {
   padding: 20px;
 }
 
-header .Nav__logo {
+header__logo {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   padding: 5px;
 }
 
-header .Nav__item {
+header__item {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
   padding: 15px;
 }
-
-header .Nav__button {
-  background-color: darkslategray;
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-  float: right;
-  padding: 7px;
-  border: solid 1px honeydew;
-}
-
 
 @media (max-width: 480) {
   h3 {
@@ -95,7 +66,9 @@ footer {
   display: grid;
   -ms-grid-columns: 80% 20%;
       grid-template-columns: 80% 20%;
-  background-color: rgba(2, 236, 236, 0.548);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#13a3a3), to(#064e4e));
+  background-image: linear-gradient(#13a3a3, #064e4e);
+  color: honeydew;
 }
 
 footer .fa {
@@ -125,8 +98,12 @@ footer .fa-twitter {
   color: white;
 }
 
+footer a {
+  color: #121235;
+}
+
 .menuRecetas li a {
-  color: honeydew;
+  color: black;
 }
 
 .recetas {
@@ -138,6 +115,8 @@ footer .fa-twitter {
           column-gap: 10px;
   row-gap: 20px;
   border: 15px solid wheat;
+  color: whitesmoke;
+  font-size: 1.1rem;
 }
 
 .recetas__item {
@@ -185,7 +164,7 @@ footer .fa-twitter {
 
 .button {
   width: 100%;
-  color: honeydew;
+  color: black;
   background-color: darkslateblue;
   padding: 7px;
   border: none;
@@ -193,10 +172,20 @@ footer .fa-twitter {
   cursor: pointer;
 }
 
+h2 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.tituloAbout {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 .formulario {
   max-width: 600px;
   margin: 2rem auto;
-  border: 2px solid honeydew;
+  border: 2px solid black;
   padding: 2rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#712ea1), to(grey));
   background: linear-gradient(#712ea1, grey);
@@ -217,7 +206,7 @@ footer .fa-twitter {
 #sendBtn {
   border: 0;
   background: #712ea1;
-  color: honeydew;
+  color: black;
   padding: 5px;
   font-weight: bold;
   border-radius: 5px;
@@ -239,7 +228,7 @@ footer .fa-twitter {
   display: grid;
   -ms-grid-rows: 1, 2;
       grid-template-rows: 1, 2;
-  border: honeydew solid 3px;
+  border: black solid 3px;
   border-radius: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -265,9 +254,90 @@ footer .fa-twitter {
   border-radius: 15px;
 }
 
+.error {
+  background-color: grey;
+}
+
+.error h1 {
+  text-align: center;
+}
+
 body {
-  background-color: darkcyan;
-  color: honeydew;
+  background-color: #c9c9c9;
+  color: black;
   overflow-x: hidden;
+  font-family: 'Cormorant', serif;
+  font-size: 17px;
+}
+
+.team:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+#primeraFila {
+  background-color: orange;
+}
+
+tr {
+  background-color: #f7d986;
+}
+
+table {
+  float: left;
+}
+
+.carouselheight {
+  width: 150vh;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-caption {
+  background-color: rgba(6, 78, 78, 0.5);
+  color: white;
+}
+
+.testimonios {
+  text-align: center;
+}
+
+.imagenesTestimonios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2, 1fr;
+      grid-template-columns: 2, 1fr;
+  -ms-grid-rows: minmax(100px, auto);
+      grid-template-rows: minmax(100px, auto);
+  row-gap: 10px;
+}
+
+.testuno {
+  -ms-grid-column: 1;
+  grid-column: 1 / 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.testdos {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.testtres {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.testcuatro {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
 }
 /*# sourceMappingURL=style.css.map */
