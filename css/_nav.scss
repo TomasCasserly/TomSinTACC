@@ -1,6 +1,9 @@
 header{
     background-image: linear-gradient(rgb(6, 78, 78), rgb(19, 163, 163));
-    position: sticky fixed;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2%;
 
 nav ul li{
     display: flex;
@@ -13,58 +16,42 @@ nav ul li{
     font-weight: bolder;
 
 }
+}
 
+nav{
+    float: left;
+    margin: 0;
+    overflow:hidden;
+    text-align: center;
+}
 
-.Nav{
-a{
-    font-size: 20px;
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav > ul > li > a{
     color: whitesmoke;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 1em;
     text-decoration: none;
-    padding: 20px;
-
-    }
 }
 
-
-&__logo{
-    order: 1;
-    padding: 5px;
-
+.logo-img{
+    float: right;
+    position: relative;
+    margin: 10px 15px 15px 10px;
+    width: 10vw;
+    height: auto;
 }
 
-&__item{
-    order: 2;
-    padding: 15px;
-}
-
-}
-
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-  }
-  
-  .price {
-    color: grey;
-    font-size: 22px;
-  }
-  
-  .card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
+.bg-div{
+    background-image: linear-gradient(rgb(6, 78, 78), rgb(19, 163, 163));
+    overflow: hidden;
+ }

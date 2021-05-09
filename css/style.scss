@@ -2,12 +2,13 @@
 
 @import "variables";
 @import "nav";
-@import "mediaqueries";
+@import "home";
 @import "footer";
 @import "recetas";
 @import "team";
 @import "formulario";
 @import "post";
+@import "productos";
 @import "error";
 
 
@@ -16,63 +17,13 @@ body{
     color: $main-font-color;
     overflow-x: hidden;
     font-family: 'Cormorant', serif;
-    font-size: 17px;
+    font-size: 20px;
+    height: 80vh;
 }
 
-
-.team:hover{
-    transform: scale(2);
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-#primeraFila{
-    background-color: orange;
-  }
-  tr{
-    background-color: #f7d986;
-  }
-  table{
-    float: left;
-  }
-
-  .carouselheight{
-    width: 150vh;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .carousel-caption {
-    background-color: rgba(6, 78, 78, 0.5);
-    color: white;
-}
-
-.testimonios{
-  text-align: center;
-}
-
-.imagenesTestimonios{
-  display: grid;
-  grid-template-columns: 2, 1fr;
-  grid-template-rows: minmax(100px, auto);
-  row-gap: 10px;
-}
-
-.testuno{
-  grid-column: 1 / 1;
-  grid-row: 1;
-}
-
-.testdos{
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.testtres{
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.testcuatro{
-  grid-column: 2;
-  grid-row: 2;
-}
+@import "mediaqueries";
