@@ -405,6 +405,8 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#064e4e), to(#13a3a3));
+    background-image: linear-gradient(#064e4e, #13a3a3);
   }
   nav li {
     margin-bottom: 1em;
@@ -462,6 +464,12 @@ img {
   }
   main {
     margin-top: 70px;
+  }
+  .recetas {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 50%, 50%;
+        grid-template-rows: 50%, 50%;
   }
 }
 
