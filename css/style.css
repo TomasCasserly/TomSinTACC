@@ -371,6 +371,8 @@ h2 {
 
 .error {
   background-color: grey;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .error h1 {
